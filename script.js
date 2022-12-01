@@ -1,14 +1,28 @@
-const notification = document.querySelectorAll("main article");
-let state = true;
+const notifications = document.querySelectorAll("main article");
+const dots = document.querySelectorAll(".unread-dot");
+const badge = document.querySelector(".badge");
+const markAll = document.querySelector(".mark-all");
+let counter = 0;
 
-notification.forEach((elem) => {
-  elem.addEventListener("click", function myFunction() {
-    if (state) {
-      state = false;
-      elem.querySelector("article .dot").classList.add(".read-dot");
+notifications.forEach((elem, index) => {
+  elem.addEventListener("click", () => {
+    if (dots[index].classList.contains("dot")) {
+      dots[index].classList.remove("dot");
+      elem.classList.remove("unread");
+      counter--;
     } else {
-      state = true;
+      dots[index].classList.add("dot");
+      elem.classList.add("unread");
+      counter++;
     }
-    // console.log(elem);
+    badge.innerHTML = counter;
+  });
+});
+
+markAll.addEventListener("click", () => {
+  dots.forEach((elem) => {
+    elem.classList.remove("dot");
+    counter = 0;
+    badge.innerHTML = counter;
   });
 });

@@ -17,21 +17,26 @@
   </head>
   <body>
     <header>
-      <h1>Notifications</h1>
-      <span>3</span>
+      <div class="title">
+        <h1>Notifications</h1>
+        <span class="badge">3</span>
+      </div>
       <span>Mark all as read</span>
     </header>
     <main>
-      <article>
+      <article class="unread">
         <img
           src="./assets/images/avatar-mark-webber.webp"
           alt="avatar-mark-webber"
         />
-        <p>
-          <span class="name">Mark Webber</span> reacted to your recent post
-          <span class="post">My first tournament today!</span>
-        </p>
-        <p class="time">1m ago</p>
+        <div class="notification">
+          <p>
+            <span class="name">Mark Webber</span> reacted to your recent post
+            <span class="post">My first tournament today!</span>
+            <span class="dot"></span>
+          </p>
+          <p class="time">1m ago</p>
+        </div>
       </article>
 
       <article>
@@ -39,8 +44,10 @@
           src="./assets/images/avatar-angela-gray.webp"
           alt="avatar-angela-gray"
         />
-        <p><span class="name">Angela Gray</span> followed you</p>
-        <p class="time">5m ago</p>
+        <div class="notification">
+          <p><span class="name">Angela Gray</span> followed you</p>
+          <p class="time">5m ago</p>
+        </div>
       </article>
 
       <article>
@@ -48,41 +55,51 @@
           src="./assets/images/avatar-jacob-thompson.webp"
           alt="avatar-jacob-thompson"
         />
-        <p>
-          <span class="name">Jacob Thompson</span> has joined your group
-          <span class="group">Chess Club</span>
-        </p>
-        <p class="time">1 day ago</p>
+        <div class="notification">
+          <p>
+            <span class="name">Jacob Thompson</span> has joined your group
+            <span class="group">Chess Club</span>
+          </p>
+          <p class="time">1 day ago</p>
+        </div>
       </article>
 
-      <article>
+      <article class="notification-message">
         <img
           src="./assets/images/avatar-rizky-hasanuddin.webp"
           alt="avatar-rizky-hasanuddin"
         />
-        <p>
-          <span class="name">Rizky Hasanuddin</span> sent you a private message
-        </p>
-        <p class="time">5 days ago</p>
-        <p class="message">
-          Hello, thanks for setting up the Chess Club. I've been a member for a
-          few weeks now and I'm already having lots of fun and improving my
-          game.
-        </p>
+        <div class="rizky">
+          <div class="notification">
+            <p>
+              <span class="name">Rizky Hasanuddin</span> sent you a private
+              message
+            </p>
+            <p class="time">5 days ago</p>
+          </div>
+          <p class="message">
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div>
       </article>
 
       <article>
-        <div>
-          <img
-            src="./assets/images/avatar-kimberly-smith.webp"
-            alt="avatar-kimberly-smith"
-          />
-          <p>
-            <span class="name">Kimberly Smith</span> commented on your picture
-          </p>
-          <p class="time">1 week ago</p>
+        <img
+          src="./assets/images/avatar-kimberly-smith.webp"
+          alt="avatar-kimberly-smith"
+        />
+        <div class="kimberly">
+          <div class="notification">
+            <p>
+              <span class="name">Kimberly Smith</span> commented on your picture
+            </p>
+            <p class="time">1 week ago</p>
+          </div>
+
+          <img src="./assets/images/image-chess.webp" alt="image-chess" />
         </div>
-        <img src="./assets/images/image-chess.webp" alt="image-chess" />
       </article>
 
       <article>
@@ -90,22 +107,27 @@
           src="./assets/images/avatar-nathan-peterson.webp"
           alt="avatar-nathan-peterson"
         />
-        <p>
-          <span class="name">Nathan Peterson</span> reacted to your recent post
-          <span class="post">
-            5 end-game strategies to increase your win rate</span
-          >
-        </p>
-        <p class="time">2 weeks ago</p>
+        <div class="notification">
+          <p>
+            <span class="name">Nathan Peterson</span> reacted to your recent
+            post
+            <span class="post">
+              5 end-game strategies to increase your win rate</span
+            >
+          </p>
+          <p class="time">2 weeks ago</p>
+        </div>
       </article>
 
       <article>
         <img src="./assets/images/avatar-anna-kim.webp" alt="avatar-anna-kim" />
-        <p>
-          <span class="name">Anna Kim</span> left the group
-          <span class="group">Chess Club</span>
-        </p>
-        <p class="time">2 weeks ago</p>
+        <div class="notification">
+          <p>
+            <span class="name">Anna Kim</span> left the group
+            <span class="group">Chess Club</span>
+          </p>
+          <p class="time">2 weeks ago</p>
+        </div>
       </article>
     </main>
 
@@ -115,5 +137,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>

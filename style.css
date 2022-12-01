@@ -19,8 +19,103 @@
   --veryDarkBlue: hsl(224, 21%, 14%);
 }
 
+body {
+  padding: 50px;
+  max-width: 100vw;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
 body p {
   font-size: 16px;
+}
+
+/* header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+
+  color: var(--white);
+  margin-left: 10px;
+  background-color: var(--blue);
+}
+
+/* main */
+main {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+article {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+article img {
+  width: 50px;
+}
+
+.notification {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-message {
+  align-items: flex-start;
+}
+
+.rizky {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.message {
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid var(--grayishBlue);
+  border-radius: 5px;
+}
+
+.kimberly {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0px;
+  vertical-align: middle;
+
+  background-color: var(--red);
+}
+
+.unread {
+  background-color: var(--veryLightGrayishBlue);
 }
 
 /* footer */

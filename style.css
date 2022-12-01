@@ -127,6 +127,13 @@ article img {
   justify-content: space-between;
 }
 
+.kimberly img {
+  /* display: block; */
+  height: auto;
+  width: auto;
+  max-height: 50px;
+}
+
 .dot {
   margin-left: 10px;
   padding: 5px;
@@ -158,4 +165,10 @@ article:hover {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 25px;
+  }
 }

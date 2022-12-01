@@ -27,6 +27,7 @@ body {
 
 body p {
   font-size: 16px;
+  color: var(--darkGrayishBlue);
 }
 
 /* header */
@@ -71,6 +72,25 @@ article {
   align-items: center;
 }
 
+.name {
+  color: black;
+  font-weight: 800;
+}
+
+.post {
+  font-weight: 800;
+  color: var(--darkGrayishBlue);
+}
+
+.group {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.time {
+  color: var(--grayishBlue);
+}
+
 article img {
   width: 50px;
 }
@@ -112,6 +132,10 @@ article img {
   vertical-align: middle;
 
   background-color: var(--red);
+}
+
+.read-dot {
+  visibility: hidden;
 }
 
 .unread {

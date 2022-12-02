@@ -25,4 +25,8 @@ markAll.addEventListener("click", () => {
     counter = 0;
     badge.innerHTML = counter;
   });
+
+  notifications.forEach((item) => {
+    item.classList.remove("unread");
+  });
 });
